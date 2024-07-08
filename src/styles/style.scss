@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  @apply text-light bg-dark;
+}
+
+body {
+  @apply text-base font-montserrat overflow-hidden;
+}
+
+.slide-animation {
+  animation: slide-animation 0.5s;
+}
+
+.opacity-animation {
+  animation: opacity-animation 0.5s;
+}
+
+@keyframes slide-animation {
+  from {
+    @apply opacity-30 translate-x-14;
+  }
+  to {
+    @apply opacity-100 translate-x-0;
+  }
+}
+
+@keyframes opacity-animation {
+  from {
+    @apply opacity-0;
+  }
+  to {
+    @apply opacity-100;
+  }
+}

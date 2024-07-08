@@ -1,0 +1,24 @@
+.container {
+  @apply max-w-60 inline-flex items-center relative;
+  .link {
+    @apply inline-flex items-center;
+    .image {
+      @apply max-w-[120px] h-full;
+    }
+    .text {
+      @apply gap-0.5 flex flex-col hover:text-light/70 transition-colors duration-300 ease-in-out;
+      .super {
+        @apply inline-flex items-center;
+        .title {
+          @apply mr-1.5 text-lg font-light tracking-wider leading-7;
+        }
+        .spoiler {
+          @apply px-1.5 inline-flex items-center justify-center text-xs font-light lowercase text-light bg-primary rounded-sm;
+        }
+      }
+      .slogan {
+        @apply text-2xl font-bold font-jost tracking-wider leading-7 uppercase;
+      }
+    }
+  }
+}
