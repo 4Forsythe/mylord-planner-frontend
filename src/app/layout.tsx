@@ -4,6 +4,8 @@ import { Montserrat_Alternates, Jost } from 'next/font/google'
 import clsx from 'clsx'
 import { Toaster } from 'sonner'
 
+import { Providers } from './providers'
+
 import { SITE_NAME, SITE_DESCRIPTION } from '@/constants/seo.constants'
 
 import '@/styles/style.scss'
@@ -40,12 +42,14 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={clsx(montserrat.variable, jost.variable)}>
-        {children}
-        <Toaster
-          theme='dark'
-          position='bottom-center'
-          duration={1500}
-        />
+        <Providers>
+          {children}
+          <Toaster
+            theme='dark'
+            position='bottom-center'
+            duration={1500}
+          />
+        </Providers>
       </body>
     </html>
   )
