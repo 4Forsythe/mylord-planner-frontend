@@ -1,0 +1,14 @@
+.container {
+  @apply px-8 py-6;
+  .panel {
+    @apply mb-5 gap-3.5 flex items-center flex-wrap;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    .panel {
+      @apply justify-center;
+    }
+  }
+}

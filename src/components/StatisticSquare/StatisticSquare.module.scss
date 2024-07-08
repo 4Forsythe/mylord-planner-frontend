@@ -1,0 +1,13 @@
+.container {
+  @apply min-w-36 w-48 h-48 p-3.5 flex flex-col items-center justify-center border border-border bg-contrast rounded-md shadow-xl
+  hover:-translate-y-1.5 transition-transform duration-300 ease-in-out;
+  .score {
+    @apply mb-1.5 text-border/30 text-4xl;
+    &.grow {
+      @apply text-primary;
+    }
+  }
+  .label {
+    @apply text-sm font-bold;
+  }
+}
