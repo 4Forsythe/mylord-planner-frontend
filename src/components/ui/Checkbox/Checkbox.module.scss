@@ -1,0 +1,8 @@
+.element {
+  @apply w-5 h-5 min-w-4 min-h-4 inline-flex items-center justify-center text-primary bg-contrast border border-border
+  rounded appearance-none outline-none cursor-pointer hover:bg-border checked:border-none focus:ring-2 focus:ring-primary
+  transition-all duration-300;
+  &:checked {
+    @apply bg-primary;
+  }
+}

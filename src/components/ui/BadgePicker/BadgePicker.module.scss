@@ -1,0 +1,6 @@
+.container {
+  @apply gap-1.5 inline-flex items-center;
+  .item {
+    @apply w-fit h-fit block;
+  }
+}

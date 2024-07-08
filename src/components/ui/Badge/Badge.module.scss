@@ -1,0 +1,10 @@
+.element {
+  @apply h-6 px-2 inline-flex items-center justify-center flex-wrap text-xs font-semibold uppercase
+  cursor-pointer select-none rounded-md outline-none transition-colors duration-200;
+  &.contained {
+    @apply text-dark bg-light;
+  }
+  &.outlined {
+    @apply bg-contrast border border-border hover:bg-border active:bg-transparent;
+  }
+}

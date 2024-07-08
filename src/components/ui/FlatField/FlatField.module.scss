@@ -1,0 +1,10 @@
+.container {
+  @apply w-full h-[30px];
+  .element {
+    @apply w-full h-full px-2.5 text-lg font-jost bg-transparent rounded outline-none truncate
+    placeholder:text-light placeholder:text-opacity-50 placeholder:text-base placeholder:italic;
+  }
+}
+.error {
+  @apply w-fit mb-1.5 px-3.5 py-1 inline-flex items-center text-sm text-error bg-error/10 rounded-md;
+}

@@ -1,0 +1,9 @@
+.container {
+  @apply p-2.5 gap-2 inline-flex items-center;
+  .item {
+    @apply w-6 h-6 rounded-md;
+    &.active {
+      @apply ring-4 ring-primary;
+    }
+  }
+}

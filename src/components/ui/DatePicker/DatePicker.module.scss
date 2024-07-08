@@ -1,0 +1,13 @@
+.container {
+  @apply inline-flex items-center relative;
+  .control {
+    @apply px-5 py-0.5 gap-1.5 flex items-center text-sm font-semibold bg-contrast border border-border rounded-sm outline-none
+    hover:bg-border active:bg-transparent transition-colors duration-200;
+    .icon {
+      @apply w-auto h-4;
+    }
+  }
+  .dropdown {
+    @apply top-[100%] left-0 mt-1.5 p-2.5 z-50 bg-contrast border border-border rounded-xl shadow absolute;
+  }
+}

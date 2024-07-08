@@ -1,0 +1,25 @@
+.container {
+  @apply mb-2.5 py-2.5;
+  .inner {
+    @apply mb-3 flex items-center justify-between;
+    .text {
+      @apply text-3xl font-bold font-jost uppercase;
+    }
+    .controls {
+      @apply hidden;
+    }
+  }
+  .divider {
+    @apply w-full h-0.5 bg-border/20;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    .inner {
+      .controls {
+        @apply block;
+      }
+    }
+  }
+}
