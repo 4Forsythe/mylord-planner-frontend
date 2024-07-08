@@ -1,0 +1,15 @@
+.container {
+  @apply h-full p-5 flex flex-col justify-between border-r border-border bg-contrast;
+  .menu {
+    @apply mt-5 pt-5 px-2.5 pb-2.5 flex flex-col border-t border-border;
+  }
+  .footer {
+    @apply py-2.5 flex items-center justify-between;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    @apply hidden;
+  }
+}

@@ -1,0 +1,63 @@
+.container {
+  @apply my-1.5;
+  .element {
+    @apply px-3 py-2.5 gap-2.5 flex items-center rounded-lg shadow-md hover:bg-border
+    transition-colors duration-200;
+    .icon {
+      @apply w-auto h-5;
+    }
+    .title {
+      @apply font-medium block;
+    }
+    &.selected {
+      @apply bg-primary;
+      .title {
+        @apply font-bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    .element {
+      @apply w-24 flex-col;
+      .title {
+        @apply hidden;
+      }
+      .icon {
+        @apply h-8;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    .element {
+      @apply w-16;
+      .icon {
+        @apply h-7;
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    .element {
+      @apply w-12;
+      .icon {
+        @apply h-6;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    .element {
+      @apply w-11;
+      .icon {
+        @apply h-5;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.element {
+  @apply px-1.5 py-2 flex items-center justify-center bg-border rounded-md shadow-md hover:bg-border/20 active:bg-contrast
+  transition-colors duration-300;
+  .icon {
+    @apply w-auto h-4;
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  @apply px-3 flex items-center;
+  .avatar {
+    @apply w-10 h-10 mr-3 flex items-center justify-center bg-primary rounded;
+    .initials {
+      @apply text-xl uppercase;
+    }
+  }
+  .info {
+    @apply gap-0.5 flex flex-col;
+    .name {
+      @apply font-bold;
+    }
+    .email {
+      @apply opacity-30 text-sm uppercase;
+    }
+  }
+}

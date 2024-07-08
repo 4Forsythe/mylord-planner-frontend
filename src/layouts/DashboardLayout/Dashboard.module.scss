@@ -1,0 +1,15 @@
+.container {
+  @apply min-h-screen grid grid-cols-[1.3fr,6fr];
+  .main {
+    @apply max-h-screen p-big-layout flex flex-col overflow-x-hidden relative;
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    @apply flex flex-col;
+    .main {
+      @apply pb-[110px] p-layout;
+    }
+  }
+}
