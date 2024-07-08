@@ -1,0 +1,36 @@
+.container {
+  @apply w-96 px-8 py-6 bg-contrast rounded-xl;
+  .error {
+    @apply w-fit mb-3.5 px-3.5 py-1 inline-flex items-center text-error bg-error/10 rounded-md;
+  }
+  .form {
+    @apply flex flex-col;
+    .fields {
+      @apply mb-7 gap-2.5 flex flex-col;
+    }
+    .controls {
+      @apply gap-2.5 flex items-center;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    @apply w-80;
+    .form {
+      .controls {
+        @apply flex-col *:w-full;
+      }
+    }
+  }
+}
+@media (max-width: 280px) {
+  .container {
+    @apply w-64 px-4;
+    .form {
+      .controls {
+        @apply flex-col items-start;
+      }
+    }
+  }
+}
