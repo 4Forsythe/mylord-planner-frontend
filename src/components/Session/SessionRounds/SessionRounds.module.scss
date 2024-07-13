@@ -1,0 +1,27 @@
+.container {
+  @apply gap-1.5 inline-flex items-center justify-center;
+  .control {
+    @apply mt-1 opacity-40 hover:opacity-100 disabled:opacity-20 active:opacity-80 active:-translate-y-0.5
+    transition-opacity duration-200;
+    .icon {
+      @apply w-auto h-8;
+    }
+  }
+  .bar {
+    @apply gap-2 flex items-center;
+    .indicator {
+      @apply w-5 h-5 bg-border border border-border rounded relative
+      transition-all duration-300;
+      &::before {
+        content: '';
+        @apply w-0 h-full top-0 left-0 bg-primary absolute;
+      }
+      &.active::before {
+        @apply w-1/3 duration-300;
+      }
+      &.completed::before {
+        @apply w-full duration-300;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.container {
+  @apply w-[330px] h-[240px] p-8 inline-flex flex-col items-center bg-contrast border border-border rounded-lg relative;
+  .timer {
+    @apply text-5xl font-semibold;
+  }
+  .control {
+    @apply mt-3.5 mb-1.5 opacity-40 hover:opacity-100 active:opacity-50
+    transition-opacity duration-300;
+    .icon {
+      @apply w-auto h-10;
+    }
+  }
+  .refresh {
+    @apply m-2.5 p-1 top-0 right-0 opacity-40 hover:opacity-80 hover:bg-border rounded-sm absolute
+    transition-opacity duration-200;
+    .icon {
+      @apply w-auto h-5;
+    }
+  }
+}
+
+@media (max-width: 912px) {
+  .container {
+    @apply self-center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    @apply w-[280px] h-[190px] p-4;
+  }
+}
