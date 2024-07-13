@@ -1,0 +1,34 @@
+.container {
+  @apply max-w-[614px];
+  .form {
+    @apply flex flex-col;
+    .fields {
+      @apply w-full mb-5 gap-3.5 flex items-center;
+      .block {
+        @apply w-full gap-2.5 flex flex-col;
+      }
+    }
+    .controls {
+      @apply pt-5 gap-2.5 flex items-center border-t border-border;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .form {
+      .controls {
+        @apply flex-col *:w-full;
+      }
+    }
+  }
+}
+@media (max-width: 490px) {
+  .container {
+    .form {
+      .fields {
+        @apply flex-col;
+      }
+    }
+  }
+}
