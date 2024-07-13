@@ -1,0 +1,13 @@
+.container {
+  @apply mb-2.5 px-2.5 pt-0.5 pb-2.5 gap-3.5 inline-flex items-center;
+  .control {
+    @apply pr-3.5 last:pr-0 gap-1.5 inline-flex items-center text-light border-r border-border/30 last:border-0 text-sm uppercase
+    hover:text-light/90 transition-colors duration-200;
+    &.selected {
+      @apply text-primary;
+    }
+    .icon {
+      @apply w-auto h-5;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.container {
+  @apply mt-1.5 pl-2.5 gap-3.5 inline-flex items-center;
+  .element {
+    @apply text-sm text-light/50 italic hover:text-light/80
+    transition-colors duration-200;
+  }
+}

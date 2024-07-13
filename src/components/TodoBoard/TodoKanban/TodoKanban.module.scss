@@ -1,0 +1,6 @@
+.container {
+  @apply mt-4 flex flex-col;
+  .board {
+    @apply w-full min-h-[70vh] gap-4 grid grid-flow-col overflow-auto;
+  }
+}

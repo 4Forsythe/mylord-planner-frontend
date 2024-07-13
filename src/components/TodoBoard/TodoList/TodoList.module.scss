@@ -1,0 +1,6 @@
+.container {
+  @apply mt-4 flex flex-col;
+  .list {
+    @apply flex flex-col;
+  }
+}

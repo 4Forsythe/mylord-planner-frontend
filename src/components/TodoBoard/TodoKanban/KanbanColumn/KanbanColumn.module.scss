@@ -1,0 +1,12 @@
+.container {
+  @apply min-w-[18rem] mb-3 p-2.5 flex flex-col bg-contrast/80 rounded-md;
+  .head {
+    @apply pb-2.5 border-b border-border;
+    .label {
+      @apply text-xl font-bold;
+    }
+  }
+  .item {
+    @apply border-b border-border;
+  }
+}

@@ -1,0 +1,61 @@
+.container {
+  @apply my-1.5 px-3.5 py-2.5 gap-3.5 flex items-center bg-contrast/80 rounded-md relative
+  hover:bg-border cursor-default transition-colors duration-300;
+  &.loaded {
+    & {
+      @apply opacity-50 select-none pointer-events-none;
+    }
+    &::after {
+      content: '';
+      @apply inset-0 z-20 bg-light/30 rounded-md absolute;
+    }
+  }
+  .head {
+    @apply gap-1.5 flex items-center grow;
+    .grip {
+      @apply mr-2.5 cursor-grab;
+    }
+  }
+  .completed {
+    @apply text-light/30 line-through italic;
+  }
+  .loader {
+    @apply inset-0 z-40 flex self-center justify-self-center animate-spin absolute;
+  }
+  .controls {
+    @apply gap-1.5 flex items-center;
+  }
+  .date {
+    @apply mr-2.5 flex items-center;
+  }
+  .priority {
+    @apply mr-2.5 flex items-center flex-wrap;
+  }
+  .control {
+    @apply p-1.5 text-light/50 bg-contrast border border-border rounded-md hover:text-light hover:bg-border
+    transition-colors duration-200;
+    .icon {
+      @apply w-auto h-4;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .container {
+    @apply grid grid-rows-2 grid-cols-[auto,auto,auto] items-start;
+    .head {
+      @apply row-span-1 col-span-3;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .container {
+    @apply grid grid-rows-3 grid-cols-[auto,auto,auto] items-start;
+    .head {
+      @apply col-span-3;
+    }
+    .date {
+      @apply col-span-3;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  @apply w-full my-2.5 p-2.5 gap-3.5 flex flex-col items-center bg-contrast/80 border border-border rounded-md relative
+  hover:bg-border cursor-default transition-colors duration-300;
+  &.loaded {
+    & {
+      @apply opacity-50 select-none pointer-events-none;
+    }
+    &::after {
+      content: '';
+      @apply inset-0 z-20 bg-light/30 rounded-md absolute;
+    }
+  }
+  .completed {
+    @apply text-light/30 line-through italic;
+  }
+  .loader {
+    @apply inset-0 z-40 flex self-center justify-self-center animate-spin absolute;
+  }
+  .head {
+    @apply mb-2.5 gap-1.5 flex items-center;
+    .grip {
+      @apply cursor-grab;
+    }
+  }
+  .main {
+    @apply w-full gap-2.5 flex flex-col self-start;
+    .bottom {
+      @apply gap-2.5 flex items-center justify-between;
+    }
+  }
+  .control {
+    @apply p-1.5 text-light/50 bg-contrast border border-border rounded-md hover:text-light hover:bg-border
+    transition-colors duration-200;
+    .icon {
+      @apply w-auto h-4;
+    }
+  }
+}
