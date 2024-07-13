@@ -1,0 +1,9 @@
+.container {
+  @apply gap-10 grid grid-cols-2;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    @apply gap-2.5 flex flex-col-reverse;
+  }
+}

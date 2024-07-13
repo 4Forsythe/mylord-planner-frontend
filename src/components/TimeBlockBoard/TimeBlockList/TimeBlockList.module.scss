@@ -1,0 +1,20 @@
+.container {
+  @apply p-4 gap-2.5 flex flex-col;
+  .list {
+    @apply min-h-[25vh] p-3 flex flex-col bg-contrast border border-border rounded-md;
+    .spoiler {
+      @apply mx-auto my-auto text-border/50 italic;
+    }
+  }
+  .time {
+    @apply w-fit pl-8 inline-block text-sm font-bold text-border/70 italic;
+  }
+}
+
+@media (max-width: 390px) {
+  .container {
+    .time {
+      @apply text-xs;
+    }
+  }
+}
